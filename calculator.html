@@ -8,37 +8,37 @@
             <div id="screen">
                 <div id="result"></div>
                 <div>
-                    <input type="text" id="expression" value="Hello World">
+                    <textarea id="expression" wrap="soft" value="Hello World"></textarea>
                 </div>
             </div>
             <div id="keypad">
                 <div class="keypad-row">
-                    <button class="keypad-button double">C</button>
-                    <button class="keypad-button symbol">%</button>
-                    <button class="keypad-button symbol">&divide;</button>
+                    <button class="keypad-button double clear" onclick="reset()">C</button>
+                    <button class="keypad-button symbol" onclick="addToExpr(this)">%</button>
+                    <button class="keypad-button symbol" onclick="addToExpr(this)">&divide;</button>
                 </div>
                 <div class="keypad-row">
-                    <button class="keypad-button">7</button>
-                    <button class="keypad-button">8</button>
-                    <button class="keypad-button">9</button>
-                    <button class="keypad-button symbol">&times;</button>
+                    <button class="keypad-button" onclick="addToExpr(this)">7</button>
+                    <button class="keypad-button" onclick="addToExpr(this)">8</button>
+                    <button class="keypad-button" onclick="addToExpr(this)">9</button>
+                    <button class="keypad-button symbol" onclick="addToExpr(this)">&times;</button>
                 </div>
                 <div class="keypad-row">
-                    <button class="keypad-button">4</button>
-                    <button class="keypad-button">5</button>
-                    <button class="keypad-button">6</button>
-                    <button class="keypad-button symbol">&minus;</button>
+                    <button class="keypad-button" onclick="addToExpr(this)">4</button>
+                    <button class="keypad-button" onclick="addToExpr(this)">5</button>
+                    <button class="keypad-button" onclick="addToExpr(this)">6</button>
+                    <button class="keypad-button symbol" onclick="addToExpr(this)">-</button>
                 </div>
                 <div class="keypad-row">
-                    <button class="keypad-button">1</button>
-                    <button class="keypad-button">2</button>
-                    <button class="keypad-button">3</button>
-                    <button class="keypad-button symbol">&plus;</button>
+                    <button class="keypad-button" onclick="addToExpr(this)">1</button>
+                    <button class="keypad-button" onclick="addToExpr(this)">2</button>
+                    <button class="keypad-button" onclick="addToExpr(this)">3</button>
+                    <button class="keypad-button symbol" onclick="addToExpr(this)">+</button>
                 </div>
                 <div class="keypad-row">
-                    <button class="keypad-button">0</button>
-                    <button class="keypad-button">.</button>
-                    <button class="keypad-button double">&equals;</button>
+                    <button class="keypad-button" onclick="addToExpr(this)">0</button>
+                    <button class="keypad-button" onclick="addToExpr(this)">.</button>
+                    <button class="keypad-button double equal" onclick="evaluateExpr()">=</button>
                 </div>
             </div>
         </div>

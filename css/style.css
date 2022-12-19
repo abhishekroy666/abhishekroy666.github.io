@@ -33,6 +33,7 @@ body {
     text-align: right;
     background-color: rgb(216, 215, 215);
     border: none;
+    width: 100%;
 }
 
 .keypad-row {
@@ -48,21 +49,6 @@ button {
     border-radius: 5px;
 }
 
-button.double {
-    width: 192px;
-}
-
-button.symbol {
-    background-color: rgb(247, 82, 82);
-    font-size: large;
-    font-weight: 600;
-    color: lightgoldenrodyellow;
-}
-
-button.symbol:hover {
-    background-color: rgb(187, 62, 62);
-}
-
 button:hover {
     border: 1px solid grey;
     box-shadow: 1px 1px darkgray;
@@ -71,4 +57,35 @@ button:hover {
 
 button:active {
     transform: translateY(1px);
+}
+
+button.double {
+    width: 192px;
+}
+
+button.clear {
+    background-color: rgb(115, 106, 229);
+    color: lightgoldenrodyellow;
+}
+
+button.clear:hover {
+    background-color: rgb(85, 78, 191);
+}
+
+button.equal {
+    background-color: rgb(65, 184, 65);
+    color: lightgoldenrodyellow;
+}
+
+button.equal:hover {
+    background-color: rgb(58, 161, 58);
+}
+
+button.symbol {
+    background-color: rgb(247, 82, 82);
+    color: lightgoldenrodyellow;
+}
+
+button.symbol:hover {
+    background-color: rgb(187, 62, 62);
 }

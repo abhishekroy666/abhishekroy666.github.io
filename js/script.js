@@ -28,7 +28,7 @@ function evaluate() {
                         break;
                     case '\xD7' :
                     case '*' :
-                        result = result* val;
+                        result = result * val;
                         break;
                     case '-' :
                         result = result - val;
@@ -51,7 +51,7 @@ function evaluate() {
         lastNum = ch + lastNum;
     }
     if (symbol == '') {
-        result = parseFloat(lastNum).toFixed(8);
+        result = parseFloat(lastNum);
     }
     document.getElementById('result').innerHTML = result;
 }
@@ -84,14 +84,15 @@ function addToExpr(button) {
         if (symbols.includes(buttonVal) || decimalPoint == buttonVal) {
             return;
         }
-    } else {
-
-    }
-    if (expr == null || expr == '0') {
         expr = buttonVal;
     } else {
         expr += buttonVal;
     }
     document.getElementById('expression').value = expr;
+}
+
+function adjustHeight() {
+    var expr = document.getElementById('expression').value;
+    // todo
 }
 
